@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column; /* Empile les onglets et le contenu */
+}
+
+.onglets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Dispose les onglets horizontalement */
+}
+
+.onglets li {
+    margin-right: 10px; /* Espace entre les onglets */
+}
+
+.bouton {
+    display: block;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.bouton.active {
+    background-color: #3e8e41; /* Couleur d'arrière-plan active */
+}
+
+.contenu {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.formulaire {
+    display: none;
+}
+
+.formulaire.active {
+    display: block;
+}
